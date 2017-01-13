@@ -8,6 +8,7 @@
 
 #import "MYTestViewController.h"
 #import "MYGetUserInfoRequest.h"
+#import "MYGetUserInfoResponed.h"
 
 static NSString *kUploadPath= @"/User/index.php/Home/UploadImage/uploadimage";
 
@@ -28,9 +29,10 @@ static NSString *kUploadPath= @"/User/index.php/Home/UploadImage/uploadimage";
 - (void)testGetRequest{
     MYGetUserInfoRequest *request = [[MYGetUserInfoRequest alloc] init];
     request.userInfoId = 1;
-    [[MYNetworkProxy defaultProxy] httpGetWithRequestObj:request entityClass:nil withCompleteBlock:^(MYNetworkResponse *response) {
+    [[MYNetworkProxy defaultProxy] httpGetWithRequestObj:request entityClass:@"MYGetUserInfoResponed" withCompleteBlock:^(MYNetworkResponse *response) {
         if(response.status == MYNetworkResponseStatusSuccessed){
-            NSDictionary *info = (NSDictionary *)response.content;
+            MYGetUserInfoResponed *info = (MYGetUserInfoResponed *)response.content;
+            NSLog(@"2");
             return ;
         }
     }];

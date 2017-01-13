@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BED6B5331E2860EC00C79FEE /* MYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6B5321E2860EC00C79FEE /* MYTestViewController.m */; };
 		BED6B5361E2861D900C79FEE /* MYGetUserInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6B5351E2861D900C79FEE /* MYGetUserInfoRequest.m */; };
+		BED6B5391E28954700C79FEE /* MYGetUserInfoResponed.m in Sources */ = {isa = PBXBuildFile; fileRef = BED6B5381E28954700C79FEE /* MYGetUserInfoResponed.m */; };
+		BED6B53C1E28CEBC00C79FEE /* userInfo.php in Resources */ = {isa = PBXBuildFile; fileRef = BED6B53B1E28CEBC00C79FEE /* userInfo.php */; };
 		D60A6DA01DE24B6500462562 /* IMG_0005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = D60A6D9F1DE24B6500462562 /* IMG_0005.JPG */; };
 		D64EB7C41E0DEE9300831F23 /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D64EB7B11E0DEE9300831F23 /* AFAutoPurgingImageCache.m */; };
 		D64EB7C51E0DEE9300831F23 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = D64EB7B31E0DEE9300831F23 /* AFImageDownloader.m */; };
@@ -74,6 +76,9 @@
 		BED6B5321E2860EC00C79FEE /* MYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYTestViewController.m; sourceTree = "<group>"; };
 		BED6B5341E2861D900C79FEE /* MYGetUserInfoRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYGetUserInfoRequest.h; sourceTree = "<group>"; };
 		BED6B5351E2861D900C79FEE /* MYGetUserInfoRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYGetUserInfoRequest.m; sourceTree = "<group>"; };
+		BED6B5371E28954700C79FEE /* MYGetUserInfoResponed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYGetUserInfoResponed.h; sourceTree = "<group>"; };
+		BED6B5381E28954700C79FEE /* MYGetUserInfoResponed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYGetUserInfoResponed.m; sourceTree = "<group>"; };
+		BED6B53B1E28CEBC00C79FEE /* userInfo.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = userInfo.php; sourceTree = "<group>"; };
 		D60A6D9F1DE24B6500462562 /* IMG_0005.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0005.JPG; sourceTree = "<group>"; };
 		D64EB7B01E0DEE9300831F23 /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; };
 		D64EB7B11E0DEE9300831F23 /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; };
@@ -190,6 +195,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BED6B53A1E28CEB000C79FEE /* htdocs */ = {
+			isa = PBXGroup;
+			children = (
+				BED6B53B1E28CEBC00C79FEE /* userInfo.php */,
+			);
+			name = htdocs;
+			sourceTree = "<group>";
+		};
 		D64EB7AF1E0DEE9300831F23 /* UIKit+AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +295,7 @@
 		D6FDCE0D1DE11B8D001E54FD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BED6B53A1E28CEB000C79FEE /* htdocs */,
 				D6FDCE9A1DE11CE4001E54FD /* RongCloudHeader.h */,
 				D6FDCE0E1DE11B8D001E54FD /* main.m */,
 			);
@@ -385,6 +399,8 @@
 				D6FDCEAB1DE12326001E54FD /* MYGetJobDetailResponed.m */,
 				D6FDCEA41DE11E7E001E54FD /* MYGetJsonMd5Responed.h */,
 				D6FDCEA51DE11E7E001E54FD /* MYGetJsonMd5Responed.m */,
+				BED6B5371E28954700C79FEE /* MYGetUserInfoResponed.h */,
+				BED6B5381E28954700C79FEE /* MYGetUserInfoResponed.m */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -553,6 +569,7 @@
 				D60A6DA01DE24B6500462562 /* IMG_0005.JPG in Resources */,
 				D6FDCE1D1DE11B8D001E54FD /* LaunchScreen.storyboard in Resources */,
 				D6FDCE1A1DE11B8D001E54FD /* Assets.xcassets in Resources */,
+				BED6B53C1E28CEBC00C79FEE /* userInfo.php in Resources */,
 				D6FDCE181DE11B8D001E54FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -593,6 +610,7 @@
 				D6FDCEE11DE13BB0001E54FD /* MYImageRequester.m in Sources */,
 				D64EB7CC1E0DEE9300831F23 /* UIWebView+AFNetworking.m in Sources */,
 				D6FDCEE01DE13BB0001E54FD /* MYDownloadRequester.m in Sources */,
+				BED6B5391E28954700C79FEE /* MYGetUserInfoResponed.m in Sources */,
 				D6FDCEA91DE1231B001E54FD /* MYGetJobDetailRequest.m in Sources */,
 				D6FDCEE31DE13BB0001E54FD /* MYNetworkUtility.m in Sources */,
 				D6FDCEAC1DE12326001E54FD /* MYGetJobDetailResponed.m in Sources */,
