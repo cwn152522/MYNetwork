@@ -1,0 +1,6 @@
+framework module MYNetwork {
+  umbrella header "MYNetwork.h"
+
+  export *
+  module * { export * }
+}
