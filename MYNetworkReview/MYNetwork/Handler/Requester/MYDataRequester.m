@@ -45,6 +45,7 @@
     }];
     manager.requestSerializer = requestSerializer;
     manager.responseSerializer = [MYNetworkUtility getHttpResponseSerializerFromRequestObject:requestObj];
+    manager.responseSerializer.acceptableContentTypes =[NSSet setWithObjects:@"text/plain", @"multipart/form-data", @"application/json", @"text/html", @"image/jpeg", @"image/png", @"application/octet-stream", @"text/json", nil];
     
     MYURLSessionTask *sessionTask = [[MYURLSessionTask alloc] init];
     //发送post请求
@@ -100,6 +101,7 @@
     }];
     manager.requestSerializer = requestSerializer;
     manager.responseSerializer = [MYNetworkUtility getHttpResponseSerializerFromRequestObject:requestObj];
+    manager.responseSerializer.acceptableContentTypes =[NSSet setWithObjects:@"text/plain", @"multipart/form-data", @"application/json", @"text/html", @"image/jpeg", @"image/png", @"application/octet-stream", @"text/json", nil];
     
     MYURLSessionTask *sessionTask = [[MYURLSessionTask alloc] init];
     //发送get请求
